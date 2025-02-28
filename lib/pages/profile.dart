@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:foodallergy/components/bottomnavbar.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class MainProfile extends StatefulWidget {
+  const MainProfile({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<MainProfile> createState() => _MainProfileState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MainProfileState extends State<MainProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: mainbottombar(context, 2),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             Text(
-              'Welcome to the Home Page',
+              'Welcome to the Profile Page',
               style: TextStyle(fontSize: 24),
             ),
           ],
