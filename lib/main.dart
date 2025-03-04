@@ -4,6 +4,8 @@ import 'package:foodallergy/pages/loginsignup.dart';
 import 'package:foodallergy/pages/profile.dart';
 import 'package:foodallergy/pages/recipe.dart';
 import 'package:foodallergy/pages/selectallergy.dart';
+import 'package:foodallergy/pages/settings.dart';
+import 'package:foodallergy/pages/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         '/recipe': (context) => const MainRecipe(),
         '/profile': (context) => const MainProfile(),
         '/selectallergy': (context) => const SelectAllergy(),
+        '/signup': (context) => const SignUpPage(),
+        '/settings': (context) => const SettingsPage(),
         
       },
 

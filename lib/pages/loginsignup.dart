@@ -12,7 +12,7 @@ class LoginSignUp extends StatefulWidget {
 class _LoginSignUpState extends State<LoginSignUp> {
 
     void onPressed () {
-    print('Button Pressed');
+
     Navigator.pushNamed(context, '/home');
 
   }
@@ -42,7 +42,19 @@ class _LoginSignUpState extends State<LoginSignUp> {
                 ],
               )
           ),
-          commonbutton(context, 'Login', onPressed)
+          commonbutton(context, 'Login', onPressed),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Don\'t have an account?'),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/signup');
+                },
+                child: Text('Sign Up'),
+              ),
+            ],
+          ),
         ],
       )),
     );
